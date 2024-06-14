@@ -1,21 +1,21 @@
-//1
+//1 10 хүртэлх натурал тоог хэвлэх программ бич
 for (let toonuud = 1; toonuud <= 10; toonuud++) {
   console.log("too:", toonuud);
 }
-//2
+//2 10 хүртэлх натурал тооны сондгой тоонуудыг хэвлэх программ бич
 for (let numbers = 0; numbers <= 10; numbers++) {
   //   if(sondgoi = numbers % 2 === 1), console.log("sondgoi:", sondgoi);
   if (numbers % 2 === 1) {
     console.log("sondgoi:", numbers);
   }
 }
-//3
+//3 10 хүртэлх натурал тооны тэгш тоонуудыг хэвлэх программ бич
 for (let numbers = 0; numbers <= 10; numbers++) {
   if (numbers % 2 === 0) {
     console.log("tegsh:", numbers);
   }
 }
-//4
+//4 100 хүртэлх натурал тооны нийлбэрийг олох программ бич
 let i = 0;
 let sum = 0;
 while (i <= 100) {
@@ -23,7 +23,7 @@ while (i <= 100) {
   i++;
 }
 console.log("niilber:", sum);
-//5
+//5  N хүртэлх натурал тооны хэвлэх болон тэдгээр тооны нийлбэрийг олох программ бич
 let n = prompt("natural too oruul");
 let niilber = 0;
 for (let ugugdul = 0; ugugdul <= n; ugugdul++) {
@@ -31,14 +31,14 @@ for (let ugugdul = 0; ugugdul <= n; ugugdul++) {
   console.log("ugugdluud:", ugugdul);
 }
 console.log("natural toon niilber:", niilber);
-//6
+//6 N тооны факториал олох программ бич
 let natural = prompt("too oruul");
 let urjver = 1;
 for (let coefficient = 1; coefficient <= natural; coefficient++) {
   urjver *= coefficient;
 }
 console.log("n hurtelh toonuudiin urjver:", urjver);
-//7
+//7 Өгөгдсөн тооны цифрүүдийн нийлбэрийг олох программ бич
 let number = 1234;
 let digit = 0;
 let summ = 0;
@@ -52,7 +52,7 @@ while (number !== 0) {
   // console.log("цифр:", digit);
 }
 console.log("digit sum:", summ);
-//8
+//8 Өгөгдсөн тоон дахь тэгш цифрүүдийн нийлбэрийг ол
 let number1 = 1234;
 let digit1 = 0;
 let sum1 = 0;
@@ -69,7 +69,7 @@ while (number1 !== 0) {
 }
 console.log("even digits:", sum1);
 console.log("odd urjver:", mult);
-//9
+//9 N хүртэлх тооны сондгой тоо хэвлэх болон түүний нийлбэрийг олох программ бич
 let n1 = 9;
 let odd_sum = 0;
 for (let data = 0; data <= n1; data++) {
@@ -79,7 +79,7 @@ for (let data = 0; data <= n1; data++) {
   }
 }
 console.log("sondgoin niilber:", odd_sum);
-//10
+//10 N хүртэлх тооны тэгш тоо хэвлэх болон түүний нийлбэрийг олох программ бич
 let n2 = 6;
 let even_sum = 0;
 for (let data1 = 0; data1 <= n2; data1++) {
@@ -89,8 +89,11 @@ for (let data1 = 0; data1 <= n2; data1++) {
   }
 }
 console.log("tegshiin niilber:", even_sum);
-//11
-let eyreg=1234
-while (number1 !== 0) {
-  let urvuu=
+//11 Өгөгдсөн эерэг тооны урвууг хэвлэх программ бич jishee ni: input: 123 output: 321
+let num = 2613;
+let str = num.toString();
+let rev_num = "";
+for (let i = 0; i < str.length; i++) {
+  rev_num = str[i] + rev_num;
 }
+console.log("urvuu:", rev_num);
